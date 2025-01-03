@@ -537,7 +537,7 @@ export const getModulesByCourseId = (req, res) => {
 
       // Prepare video and quiz count string
       const activitySummary = `${videoCount} Video${
-        videoCount !== 1 ? "s" : ""
+        videoCount !== 1 ? "" : "s"
       }  ${quizCount} Quiz${quizCount !== 1 ? "zes" : ""}`;
 
       return {
